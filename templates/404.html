@@ -1,7 +1,11 @@
 {% extends "layout.html" %}
 {% block title %}Página no encontrada{% endblock %}
 {% block body %}
-  <h1>Página no encontrada</h1>
-  <p>Lo que buscabas no está allí. 
-  <p><a href="{{ url_for('index') }}">Ir a algún lugar agradable</a>
+  <div class="container">
+	  <div class="column-center">
+		  <h1>Página no encontrada</h1>
+		  <p>Lo que buscabas no está allí. 
+		  <p><a href="{{ url_for('index') }}">Ir a algún lugar agradable</a>
+  	  </div>
+  </div>
 {% endblock %}

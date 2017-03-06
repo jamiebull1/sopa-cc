@@ -1,20 +1,57 @@
-.container {
-	position: relative;
-	width: 100%;
+html, body {
+  height: 100%;
+  margin: 10px;
 }
-.container div {
-	height: 300px;
+.navbar {
+	text-align: center;
+	text-transform: uppercase;
+    padding-bottom: 20px;
 }
 .column-center {
 	width: 34%;
 	margin-left: 33%;
 	position: relative;
+}
+.centred-links {
 	text-align: center;
 }
-h1 {
+.header img {
+	display: block;
+    margin: auto;
+}
+body {
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+.footer {
+	height: 160px;
 	text-align: center;
 }
-navbar div{
-	height: 120px;
-	text-align: center;
+.push {
+	height: 160px;
+}
+.page {
+	min-height: 100%;
+	margin-bottom: -160px;
+}
+.social-icon {
+	display: inline;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+.navbar	a:link {
+    color: #2c2f3e;
+}
+.navbar	a:visited {
+    color: #2c2f3e;
+}
+.navbar	a:hover {
+    color: #9e9e9e;
+	text-decoration: none;
+}
+.navbar	a:active {
+    color: #9e9e9e;
 }

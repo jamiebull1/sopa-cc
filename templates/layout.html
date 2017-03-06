@@ -1,11 +1,16 @@
 <!doctype html>
 <title>Sopa CC</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/style.css') }}">
-<div class="navbar">
-    <a href="{{ url_for('index') }}">Home</a>
-    <a href="mailto:jamiebull1+sopacc@gmail.com">Contact us</a>
+<div class="page">
+{% block header %}
+<div class="header">
+	<a href="/"><img src="{{ url_for('static', filename='img/header.png') }}"></a>
 </div>
-<div class=page>
+{% endblock %}
+{% include "navbar.html" %}
+<div class="page-inside">
   {% block body %}{% endblock %}
 </div>
+{% include "footer.html" %}
