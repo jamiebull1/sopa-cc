@@ -1,0 +1,11 @@
+<!doctype html>
+<title>Sopa CC</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/style.css') }}">
+<div class="navbar">
+    <a href="{{ url_for('index') }}">Home</a>
+    <a href="mailto:jamiebull1+sopacc@gmail.com">Contact us</a>
+</div>
+<div class=page>
+  {% block body %}{% endblock %}
+</div>
