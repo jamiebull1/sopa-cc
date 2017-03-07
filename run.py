@@ -1,21 +1,29 @@
+import logging
 import os
+import sys
 
 from flask import Flask
 from flask import render_template
 
 
-app = Flask(__name__)
+app = Flask(__name__, instance_relative_config=True)
+app.logger.addHandler(logging.StreamHandler(sys.stdout))
+app.logger.setLevel(logging.DEBUG)
 
-config = {
-    "development": "instance.config.DevelopmentConfig",
-    "default": "instance.config.DevelopmentConfig",
-    "production": "config.ProductionConfig"
-}
 
 def configure_app(app):
-    config_name = os.getenv('FLASK_CONFIGURATION', 'default')
-    app.config.from_object(config[config_name])  # object-based default configuration
-    app.config.from_pyfile('config.cfg', silent=True)  # instance-folders configuration
+    # from default in config dir
+    app.config.from_object('config.default.Config')
+    try:
+        # from config in instance dir
+        app.config.from_object('instance.config.Config')
+    except ImportError:
+        pass
+    is_production = os.getenv('IS_PRODUCTION', None)
+    if is_production:
+        app.config.from_object('config.production.Config')
+
+configure_app(app)
 
 
 @app.errorhandler(404)
@@ -44,6 +52,5 @@ def como_funciona():
 
 
 if __name__ == "__main__":
-#    app.run(host='0.0.0.0')
-    configure_app(app)
     app.run(host='0.0.0.0')
+

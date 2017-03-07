@@ -2,7 +2,7 @@
 """
 """
 
-class ProductionConfig(object):
+class Config(object):
 
     DEBUG = False
     CITY = u"Cáceres"
