@@ -13,3 +13,4 @@ class Config(object):
     SOUP_FEE = u"5"
     USER001 = u"Jamie"
     USER001_BIO = u"Jamie es un inglés, actualmente ubicado en Cáceres, con el deseo de devolver algo a la comunidad a cambio de las buenas cosas que ha recibido."
+    TRACKING_ID = u"UA-93180043-1"
