@@ -1,16 +1,29 @@
 <!doctype html>
 <title>Sopa CC</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/style.css') }}">
-<div class="page">
-{% block header %}
-<div class="header">
-	<a href="/"><img src="{{ url_for('static', filename='img/header.png') }}"></a>
-</div>
-{% endblock %}
-{% include "navbar.html" %}
-<div class="page-inside">
-  {% block body %}{% endblock %}
+
+	<div class="page">
+	{% block header %}
+		<div class="header">
+			<a href="/"><img src="{{ url_for('static', filename='img/header.png') }}"></a>
+		</div>
+	{% endblock %}
+	<div class="row">
+		<div class="col-12">
+			{% include "navbar.html" %}
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-4"></div>
+		<div class="col-4">
+			<div class="page-inside">
+			  {% block body %}{% endblock %}
+			</div>
+		</div>
+	</div>
 </div>
 {% include "footer.html" %}
+	
