@@ -1,13 +1,11 @@
 {% extends "layout.html" %}
 {% block title %}{{ config.GROUP_NAME }} | Quiénes Somos{% endblock %}
 {% block body %}
-  <div class="container">
-	  <div class="column-center">
-	  	<h1>¿Quiénes somos?</h1>
-	  		<h2>{{ config.USER001 }}</h2>
-	  		<p>{{ config.USER001_BIO }}
-	  		<h2>¿Tú?</h2>
-	  		<p><a href="mailto:{{ config.EMAIL_ID }}?subject=Quiero participar">¡Apúntate aquí!</a>
-	  </div>
+  <div class="column-center">
+  	<h1>¿Quiénes somos?</h1>
+  		<h2>{{ config.USER001 }}</h2>
+  		<p>{{ config.USER001_BIO }}
+  		<h2>¿Tú?</h2>
+  		<p><a href="mailto:{{ config.EMAIL_ID }}?subject=Quiero participar">¡Apúntate aquí!</a>
   </div>
 {% endblock %}

@@ -1,93 +1,116 @@
-* {
-    box-sizing: border-box;
+html {
+	height: 100%;
+	margin: 10px;
+	box-sizing: border-box;
 }
-/* For mobile phones: */
+* {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+/* Responsive layout: */
 [class*="col-"] {
-    width: 100%;
-    float: left;
-    padding: 5px;
-/*    border: 1px solid red;
+	width: 100%;
+	float: left;
+	padding: 5px;
 }
 @media only screen and (min-width: 600px) {
-    /* For tablets: */
-    .col-m-1 {width: 8.33%;}
-    .col-m-2 {width: 16.66%;}
-    .col-m-3 {width: 25%;}
-    .col-m-4 {width: 33.33%;}
-    .col-m-5 {width: 41.66%;}
-    .col-m-6 {width: 50%;}
-    .col-m-7 {width: 58.33%;}
-    .col-m-8 {width: 66.66%;}
-    .col-m-9 {width: 75%;}
-    .col-m-10 {width: 83.33%;}
-    .col-m-11 {width: 91.66%;}
-    .col-m-12 {width: 100%;}
+	/* For tablets: */
+	.col-m-1 {width: 8.33%;}
+	.col-m-2 {width: 16.66%;}
+	.col-m-3 {width: 25%;}
+	.col-m-4 {width: 33.33%;}
+	.col-m-5 {width: 41.66%;}
+	.col-m-6 {width: 50%;}
+	.col-m-7 {width: 58.33%;}
+	.col-m-8 {width: 66.66%;}
+	.col-m-9 {width: 75%;}
+	.col-m-10 {width: 83.33%;}
+	.col-m-11 {width: 91.66%;}
+	.col-m-12 {width: 100%;}
 }
 @media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
+	/* For desktop: */
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
 }
 .row::after {
-    content: "";
-    clear: both;
-    display: table;
+	content: "";
+	clear: both;
+	display: table;
 }
-
-html, body {
-  height: 100%;
-  margin: 10px;
+.header img {
+	display: block;
+	margin: auto;
+	height: auto;
+	max-width: 100%;
 }
 .navbar {
 	text-align: center;
 	text-transform: uppercase;
-    padding-bottom: 20px;
+	padding-bottom: 20px;
 }
+/* For the page of email links that we want centred */ 
 .centred-links {
 	text-align: center;
 }
-.header img {
-	display: block;
-    margin: auto;
-	height: auto;
-	max-width: 100%;
-}
 body {
-    font-family: "Segoe UI",Arial,sans-serif;
+	position: relative;
+	margin: 0;
+	padding-bottom: 6rem;
+	min-height: 100%;
+	font-family: "Segoe UI",Arial,sans-serif;
 }
-.footer {
-	height: 160px;
-	text-align: center;
+.page {
+	margin: 0 auto;
+	padding-top: 15px;
+	width: 100%;
+}
+.push {
+	height: 80px;
 }
 .social-icon {
 	display: inline;
+}
+.footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	background-color: #efefef;
+	text-align: center;
+}
+/* Link formatting */
+.navbar	a:link {
+	color: #2c2f3e;
+}
+.navbar	a:visited {
+	color: #2c2f3e;
+}
+.navbar	a:hover {
+	color: #9e9e9e;
+	text-decoration: none;
+}
+.navbar	a:active {
+	color: #9e9e9e;
 }
 a {
 	text-decoration: none;
 }
 a:hover {
 	text-decoration: underline;
-}
-.navbar	a:link {
-    color: #2c2f3e;
-}
-.navbar	a:visited {
-    color: #2c2f3e;
-}
-.navbar	a:hover {
-    color: #9e9e9e;
-	text-decoration: none;
-}
-.navbar	a:active {
-    color: #9e9e9e;
 }
