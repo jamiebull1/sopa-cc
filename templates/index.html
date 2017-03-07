@@ -1,14 +1,14 @@
 {% extends "layout.html" %}
-{% block title %}Sopa CC{% endblock %}
+{% block title %}{{ config.GROUP_NAME }} | Inicio{% endblock %}
 {% block body %}
   <div class="container">
 	  <div class="column-center">
 	  	<br>
 	  	<br>
-		<p>Inspirado por <a href="http://detroitsoup.com/">Detroit Soup</a>, Sopa Cáceres coordina financiamiento de la comunidad para proyectos comunitarios creativos.
+		<p>Inspirado por <a href="http://detroitsoup.com/">Detroit Soup</a>, Sopa {{ config.CITY }} coordina financiamiento de la comunidad para proyectos comunitarios creativos.
 		<p>La idea es sencilla: los asistentes pagan una pequeña cantidad por la entrada. En cambio reciben sopa y un voto. Escuchan cuatro propuestas brevas para proyectos provenientes de la comunidad local, y luego debaten estas ideas mientras cenan. Después, todos votan y el ganador sale con el dinero recaudado.
 		<p>Todas las personas que proponen proyectos tendrán la oportunidad de obtener nuevos contactos, apoyo y asesoramiento, independientemente del resultado. Y la comunidad circundante beneficiará de la oportunidad de interactuar entre sí, y ¡de tener una voz!
-		<p>Si estás interesado en lanzar un proyecto, ayudar a hacer que suceda, o asistir de cualquier manera, por favor <a href="mailto:jamiebull1+sopacc@gmail.com">ponte en contacto</a>.
+		<p>Si estás interesado en lanzar un proyecto, ayudar a hacer que suceda, o asistir de cualquier manera, por favor <a href="mailto:{{ config.EMAIL_ID }}">ponte en contacto</a>.
 	  </div>
   </div>
 {% endblock %}

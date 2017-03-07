@@ -1,5 +1,5 @@
 {% extends "layout.html" %}
-{% block title %}Sopa CC{% endblock %}
+{% block title %}{{ config.GROUP_NAME }} | Eventos{% endblock %}
 {% block body %}
   <div class="container">
 	  <div class="column-center">
@@ -8,19 +8,19 @@
 	  		<div class="centred-links">
 		  		<h2>Ubicación</h2>
 		  		<p>Quizás tienes el lugar ideal. 
-		  		<p><a href="mailto:jamiebull1+sopacc@gmail.com?subject=Oferta de lugar - SopaCC">¡Puedo ofrecer un lugar!</a>
+		  		<p><a href="mailto:{{ config.EMAIL_ID }}?subject=Oferta de lugar - {{ config.GROUP_NAME }}">¡Puedo ofrecer un lugar!</a>
 		  		<p>O quizás sabes a quien podemos hablar.
-		  		<p><a href="mailto:jamiebull1+sopacc@gmail.com?subject=Sugerencia de lugar - SopaCC">¡Puedo sugerir un lugar!</a>
+		  		<p><a href="mailto:{{ config.EMAIL_ID }}?subject=Sugerencia de lugar - {{ config.GROUP_NAME }}">¡Puedo sugerir un lugar!</a>
 		  		<h2>Presentadores</h2>
-		  		<p>Necesitamos ideas que llaman a la gente de Cáceres, y presentadores que quieren desarrollarlas. 
-		  		<p><a href="mailto:jamiebull1+sopacc@gmail.com?subject=Sugerencia de presentador - SopaCC">¡Puedo sugerir un presentador!</a>
+		  		<p>Necesitamos ideas que llaman a la gente de {{ config.CITY }}, y presentadores que quieren desarrollarlas. 
+		  		<p><a href="mailto:{{ config.EMAIL_ID }}?subject=Sugerencia de presentador - {{ config.GROUP_NAME }}">¡Puedo sugerir un presentador!</a>
 		  		<p>Quizás tienes un proyecto en mente.
-		  		<p><a href="mailto:jamiebull1+sopacc@gmail.com?subject=Quiero presentar - SopaCC">¡Quiero presentar!</a>
+		  		<p><a href="mailto:{{ config.EMAIL_ID }}?subject=Quiero presentar - {{ config.GROUP_NAME }}">¡Quiero presentar!</a>
 		  		<h2>Asistencia</h2>
-		  		<p><a href="mailto:jamiebull1+sopacc@gmail.com?subject=Oferta de asistencia - SopaCC">¡Puedo asistir!</a>
+		  		<p><a href="mailto:{{ config.EMAIL_ID }}?subject=Oferta de asistencia - {{ config.GROUP_NAME }}">¡Puedo asistir!</a>
 		  		<h2>Información</h2>
-		  		<p>O quizás el proyecto de Sopa Cáceres todavía no te convence del todo, pero quieres seguir nuestro progreso.
-		  		<p><a href="mailto:jamiebull1+sopacc@gmail.com?subject=Anadirme a la lista de correos - SopaCC">¡Manténgame informado!</a>
+		  		<p>O quizás el proyecto de Sopa {{ config.CITY }} todavía no te convence del todo, pero quieres seguir nuestro progreso.
+		  		<p><a href="mailto:{{ config.EMAIL_ID }}?subject=Anadirme a la lista de correos - {{ config.GROUP_NAME }}">¡Manténgame informado!</a>
 	  		</div>
 	  </div>
   </div>

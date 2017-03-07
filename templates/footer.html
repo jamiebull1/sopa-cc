@@ -4,13 +4,13 @@
 		<div class="col-12">
 			<div class="social">
 			  	<li class="social-icon">
-		            <a href="https://twitter.com/sopa_cc"><img src="{{ url_for('static', filename='img/social-icons/twitter.png') }}" height=50px></a>
+		            <a href="https://twitter.com/{{ config.TWITTER_ID }}"><img src="{{ url_for('static', filename='img/social-icons/twitter.png') }}" height=50px></a>
 				</li>
 			  	<li class="social-icon">
-		            <a href="https://facebook.com/sopacaceres"><img src="{{ url_for('static', filename='img/social-icons/facebook.png') }}" height=50px></a>
+		            <a href="https://facebook.com/{{ config.FACEBOOK_ID }}"><img src="{{ url_for('static', filename='img/social-icons/facebook.png') }}" height=50px></a>
 				</li>
 			  	<li class="social-icon">
-		            <a href="mailto:jamiebull1+sopacc@gmail.com"><img src="{{ url_for('static', filename='img/social-icons/email.png') }}" height=50px></a>
+		            <a href="mailto:{{ config.EMAIL_ID }}"><img src="{{ url_for('static', filename='img/social-icons/email.png') }}" height=50px></a>
 				</li>
 			</div>
 		</div>
